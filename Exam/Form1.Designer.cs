@@ -56,7 +56,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button_Update = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -330,22 +329,11 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Фамилия";
             // 
-            // button_Update
-            // 
-            this.button_Update.Location = new System.Drawing.Point(629, 156);
-            this.button_Update.Name = "button_Update";
-            this.button_Update.Size = new System.Drawing.Size(232, 42);
-            this.button_Update.TabIndex = 17;
-            this.button_Update.Text = "Обновить";
-            this.button_Update.UseVisualStyleBackColor = true;
-            this.button_Update.Click += new System.EventHandler(this.button_Update_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 552);
-            this.Controls.Add(this.button_Update);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button_Edit);
@@ -394,6 +382,5 @@
         private Label label6;
         private Label label7;
         private Label label8;
-        private Button button_Update;
     }
 }

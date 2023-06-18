@@ -44,6 +44,10 @@ namespace Exam
                 return;
             }
             panel2.Enabled = true;
+            IdForEdit = -1;
+            IdForDelete = -1;
+            button_Edit.Enabled = false;
+            button_Detele.Enabled = false;
         }
 
         private void button_Edit_Click(object sender, EventArgs e)
@@ -93,6 +97,7 @@ namespace Exam
         {
             try
             {
+
                 var newChessPlayer = new ChessPlayer()
                 {
                     Страна = textBox_AddCountry.Text,
@@ -109,11 +114,6 @@ namespace Exam
             {
                 MessageBox.Show(ex.Message.ToString());
             }
-        }
-
-        private void button_Update_Click(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = Service.Update(dataGridView1, context);
         }
 
         private void button_Detele_Click(object sender, EventArgs e)
